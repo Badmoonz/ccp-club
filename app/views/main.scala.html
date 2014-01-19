@@ -1,0 +1,247 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>Unify | Welcome...</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="@routes.Assets.at("plugins/bootstrap/css/bootstrap.min.css")" />
+    <link rel="stylesheet" href="@routes.Assets.at("css/style.css")" />
+    <link rel="stylesheet" href="@routes.Assets.at("css/headers/header2.css")" />
+    <link rel="stylesheet" href="@routes.Assets.at("plugins/bootstrap/css/bootstrap-responsive.min.css")" />
+    <link rel="stylesheet" href="@routes.Assets.at("css/style_responsive.css")" />
+    <link rel="shortcut icon" href="@routes.Assets.at("favicon.ico")" />
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="@routes.Assets.at("plugins/font-awesome/css/font-awesome.css")" />
+    <link rel="stylesheet" href="@routes.Assets.at("plugins/flexslider/flexslider.css")" type="text/css" media="screen" />
+    <link rel="stylesheet" href="@routes.Assets.at("plugins/parallax-slider/css/parallax-slider.css")" type="text/css" />
+    <link rel="stylesheet" href="@routes.Assets.at("plugins/bxslider/jquery.bxslider.css")" />
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="@routes.Assets.at("css/themes/default.css")" id="style_color" />
+    <link rel="stylesheet" href="@routes.Assets.at("css/themes/headers/default.css")" id="style_color-header-2" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+<!--=== Top ===-->
+<div class="top">
+    <div class="container">
+        <div class="row-fluid">
+            <ul class="loginbar inline">
+                <li><a href="mailto:info@@anybiz.com"><i class="icon-envelope-alt"></i> info@@anybiz.com</a></li>
+                <li><a><i class="icon-phone-sign"></i> 010 4202 2656</a></li>
+                <!--<li><a href="page_login.html"><i class="icon-user"></i> LOGIN</a></li>-->
+            </ul>
+        </div>
+    </div><!--/container-->
+</div><!--/top-->
+<!--=== End Top ===-->
+
+<!--=== Header ===-->
+<div class="header">
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html"><img id="logo-header" src="assets/img/logo-mini.png" alt="Logo" /></a>
+        </div><!-- /logo -->
+
+        <!-- Menu -->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a><!-- /nav-collapse -->
+                <div class="nav-collapse collapse">
+                    <ul class="nav top-2">
+                        <li>
+                            <!--class="active"-->
+                            <a href="@routes.Application.index()">Главная
+                                <!--<b class="caret"></b>-->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@routes.Application.services()" class="dropdown-toggle" data-toggle="dropdown">Услуги
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="@routes.Application.services()">Cтратегический
+                                    и инвестиционный консалтинг</a></li>
+                                <li><a href="@routes.Application.services()">Правовое
+                                    сопровождение</a></li>
+                                <li><a href="@routes.Application.services()">Проектное
+                                    сопровождение</a></li>
+                                <li><a href="@routes.Application.services()">Налоговый
+                                    консалтинг и аудит</a></li>
+                                <li><a href="@routes.Application.services()">Управленческий
+                                    консалтинг</a></li>
+                            </ul>
+                            <b class="caret-out"></b>
+                        </li>
+                        <li>
+                            <a href="@routes.Application.about()" >О нас
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@routes.Application.contacts()" >Контакты
+                            </a>
+                            <b class="caret-out"></b>
+                        </li>
+                        <li><a class="search"><i class="icon-search search-btn"></i></a></li>
+                    </ul>
+                    <div class="search-open">
+                        <div class="input-append">
+                            <form />
+                            <input type="text" class="span3" placeholder="Search" />
+                            <button type="submit" class="btn-u">Go</button>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /nav-collapse -->
+            </div><!-- /navbar-inner -->
+        </div><!-- /navbar -->
+    </div><!-- /container -->
+</div><!--/header -->
+<!--=== End Header ===-->
+@content
+
+<!--=== Footer ===-->
+<div class="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span4">
+                <!-- About -->
+                <div class="headline"><h3>О нас</h3></div>
+                <p class="margin-bottom-25">...</p>
+
+                <!--&lt;!&ndash; Monthly Newsletter &ndash;&gt;-->
+                <!--<div class="headline"><h3>Monthly Newsletter</h3></div>-->
+                <!--<p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>-->
+                <!--<form class="form-inline" />-->
+                <!--<div class="input-append">-->
+                    <!--<input type="text" placeholder="Email Address" class="input-medium" />-->
+                    <!--<button class="btn-u">Subscribe</button>-->
+                <!--</div>-->
+                <!--</form>-->
+            </div><!--/span4-->
+
+            <div class="span4">
+                <div class="posts">
+                    <div class="headline"><h3>Последние новости</h3></div>
+                    <dl class="dl-horizontal">
+                        <dt><a href="#"><img src="@routes.Assets.at("img/sliders/elastislide/6.jpg")" alt="" /></a></dt>
+                        <dd>
+                            <p><a href="#">1</a></p>
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt><a href="#"><img src="@routes.Assets.at("img/sliders/elastislide/10.jpg")" alt="" /></a></dt>
+                        <dd>
+                            <p><a href="#">2</a></p>
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt><a href="#"><img src="@routes.Assets.at("img/sliders/elastislide/11.jpg")" alt="" /></a></dt>
+                        <dd>
+                            <p><a href="#">3</a></p>
+                        </dd>
+                    </dl>
+                </div>
+            </div><!--/span4-->
+
+            <div class="span4">
+                <!-- Monthly Newsletter -->
+                <div class="headline"><h3>Контакты</h3></div>
+                  <address>
+                    <i class="icon-home"></i>   25, Lorem Lis Street, Orange     California, US <br />
+                    <i class="icon-phone-sign"></i>   Phone: 800 123 3456 <br />
+                    Fax: 800 123 3456 <br />
+                    <i class="icon-envelope-alt"></i>  Email: <a href="mailto:info@@anybiz.com" class="">info@@anybiz.com</a>
+                </address>
+
+                <!-- Stay Connected -->
+                <div class="headline"><h3>Мы в сети</h3></div>
+                <ul class="social-icons">
+                    <li><a href="#" data-original-title="Feed" class="social_rss"></a></li>
+                    <li><a href="#" data-original-title="Facebook" class="social_facebook"></a></li>
+                    <li><a href="#" data-original-title="Twitter" class="social_twitter"></a></li>
+                    <li><a href="#" data-original-title="Goole Plus" class="social_googleplus"></a></li>
+                    <li><a href="#" data-original-title="Pinterest" class="social_pintrest"></a></li>
+                    <li><a href="#" data-original-title="Linkedin" class="social_linkedin"></a></li>
+                    <li><a href="#" data-original-title="Vimeo" class="social_vimeo"></a></li>
+                </ul>
+            </div><!--/span4-->
+        </div><!--/row-fluid-->
+    </div><!--/container-->
+</div><!--/footer-->
+<!--=== End Footer ===-->
+
+<!--=== Copyright ===-->
+<div class="copyright">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span8">
+                <p>2013 &copy; ccp-club. ALL Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+            <!--<div class="span4">-->
+                <!--<a href="index.html"><img id="logo-footer" src="@routes.Assets.at("img/logo1.png")" class="pull-right" alt="" /></a>-->
+            <!--</div>-->
+        </div><!--/row-fluid-->
+    </div><!--/container-->
+</div><!--/copyright-->
+<!--=== End Copyright ===-->
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="@routes.Assets.at("js/jquery-1.8.2.min.js")"></script>
+<script type="text/javascript" src="@routes.Assets.at("js/modernizr.custom.js")"></script>
+<script type="text/javascript" src="@routes.Assets.at("plugins/bootstrap/js/bootstrap.min.js")"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="@routes.Assets.at("plugins/flexslider/jquery.flexslider-min.js")"></script>
+<script type="text/javascript" src="@routes.Assets.at("plugins/parallax-slider/js/modernizr.js")"></script>
+<script type="text/javascript" src="@routes.Assets.at("plugins/parallax-slider/js/jquery.cslider.js")"></script>
+<script type="text/javascript" src="@routes.Assets.at("plugins/bxslider/jquery.bxslider.js")"></script>
+<script type="text/javascript" src="@routes.Assets.at("plugins/back-to-top.js")"></script>
+
+<!-- JS Page Level -->
+<script type="text/javascript" src="@routes.Assets.at("js/app.js")"></script>
+<script type="text/javascript" src="@routes.Assets.at("js/pages/index.js")"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initSliders();
+        App.initBxSlider1();
+        Index.initParallaxSlider();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="@routes.Assets.at("js/respond.js")"></script>
+<![endif]-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29166220-1']);
+  _gaq.push(['_setDomainName', 'htmlstream.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
+
