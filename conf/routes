@@ -7,6 +7,12 @@ GET     /                           controllers.Application.index
 GET     /about                      controllers.Application.about
 GET     /contacts                   controllers.Application.contacts
 GET     /services                   controllers.Application.services
+GET     /partnership                controllers.Application.partnership
+GET     /partnership/clients        controllers.Application.clients
+GET     /partnership/investors      controllers.Application.investors
+GET     /partnership/advisors       controllers.Application.advisors
+GET     /partnership/agents         controllers.Application.agents
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

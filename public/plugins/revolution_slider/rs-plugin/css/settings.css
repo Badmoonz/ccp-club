@@ -242,8 +242,59 @@ website:   	http://www.themepunch.com
 			white-space:nowrap;
 			padding: 3px 4px;
 			padding-top: 1px;
-			background-color:#7e8e96;
+			background-color:#e74c3c;
 					}
+
+.tp-caption.very_big_white_on_red{
+			position: absolute;
+			color: #fff;
+			text-shadow: none;
+			font-weight: 800;
+			font-size: 36px;
+			line-height: 36px;
+			font-family: 'Open Sans', sans;
+			margin: 0px;
+			border-width: 0px;
+			border-style: none;
+			white-space:nowrap;
+			padding: 3px 4px;
+			padding-top: 1px;
+			background-color:#e74c3c;
+}
+
+.tp-caption.very_big_white_on_green{
+			position: absolute;
+			color: #fff;
+			text-shadow: none;
+			font-weight: 800;
+			font-size: 36px;
+			line-height: 36px;
+			font-family: 'Open Sans', sans;
+			margin: 0px;
+			border-width: 0px;
+			border-style: none;
+			white-space:nowrap;
+			padding: 3px 4px;
+			padding-top: 1px;
+			background-color:#0c6638;
+}
+
+.tp-caption.very_big_white_on_black{
+            position: absolute;
+            color: #fff;
+            text-shadow: none;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 36px;
+            font-family: 'Open Sans', sans;
+            margin: 0px;
+            border-width: 0px;
+            border-style: none;
+            white-space:nowrap;
+            padding: 3px 4px;
+            padding-top: 1px;
+            background-color:#000;
+}
 
 .tp-caption.very_big_black{
 			position: absolute;

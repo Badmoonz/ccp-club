@@ -24,11 +24,16 @@
     <link rel="stylesheet" href="@routes.Assets.at("plugins/bootstrap/css/bootstrap-responsive.min.css")" />
     <link rel="stylesheet" href="@routes.Assets.at("css/style_responsive.css")" />
     <link rel="shortcut icon" href="@routes.Assets.at("favicon.ico")" />
+    <link rel="stylesheet" href="@routes.Assets.at("plugins/glyphicons/css/glyphicons.css")"  />
+
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="@routes.Assets.at("plugins/font-awesome/css/font-awesome.css")" />
     <link rel="stylesheet" href="@routes.Assets.at("plugins/flexslider/flexslider.css")" type="text/css" media="screen" />
     <link rel="stylesheet" href="@routes.Assets.at("plugins/parallax-slider/css/parallax-slider.css")" type="text/css" />
     <link rel="stylesheet" href="@routes.Assets.at("plugins/bxslider/jquery.bxslider.css")" />
+
+    <link rel="stylesheet" href="@routes.Assets.at("plugins/revolution_slider/css/rs-style.css")" media="screen" />
+    <link rel="stylesheet" href="@routes.Assets.at("plugins/revolution_slider/rs-plugin/css/settings.css")" media="screen" />
 
     <!-- CSS Theme -->
     <link rel="stylesheet" href="@routes.Assets.at("css/themes/default.css")" id="style_color" />
@@ -54,66 +59,91 @@
 <div class="header">
     <div class="container">
         <!-- Logo -->
-        <div class="logo">
-            <a href="index.html"><img id="logo-header" src="assets/img/logo-mini.png" alt="Logo" /></a>
-        </div><!-- /logo -->
+        <!--<div class="logo">-->
+            <!--<a href="index.html"><img id="logo-header" src="assets/img/logo-mini.png" alt="Logo" /></a>-->
+        <!--</div>&lt;!&ndash; /logo &ndash;&gt;-->
 
-        <!-- Menu -->
-        <div class="navbar">
-            <div class="navbar-inner">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a><!-- /nav-collapse -->
-                <div class="nav-collapse collapse">
-                    <ul class="nav top-2">
-                        <li>
-                            <!--class="active"-->
-                            <a href="@routes.Application.index()">Главная
-                                <!--<b class="caret"></b>-->
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@routes.Application.services()" class="dropdown-toggle" data-toggle="dropdown">Услуги
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="@routes.Application.services()">Cтратегический
-                                    и инвестиционный консалтинг</a></li>
-                                <li><a href="@routes.Application.services()">Правовое
-                                    сопровождение</a></li>
-                                <li><a href="@routes.Application.services()">Проектное
-                                    сопровождение</a></li>
-                                <li><a href="@routes.Application.services()">Налоговый
-                                    консалтинг и аудит</a></li>
-                                <li><a href="@routes.Application.services()">Управленческий
-                                    консалтинг</a></li>
-                            </ul>
-                            <b class="caret-out"></b>
-                        </li>
-                        <li>
-                            <a href="@routes.Application.about()" >О нас
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@routes.Application.contacts()" >Контакты
-                            </a>
-                            <b class="caret-out"></b>
-                        </li>
-                        <li><a class="search"><i class="icon-search search-btn"></i></a></li>
-                    </ul>
-                    <div class="search-open">
-                        <div class="input-append">
-                            <form />
-                            <input type="text" class="span3" placeholder="Search" />
-                            <button type="submit" class="btn-u">Go</button>
-                            </form>
-                        </div>
-                    </div>
-                </div><!-- /nav-collapse -->
+        <!-- Begin Navbar -->
+        <div id="nav">
+            <div class="navbar navbar-static">
+
+                <div class="navbar-inner" id="mastnav">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a><!-- /nav-collapse -->
+                    <div class="nav-collapse collapse">
+                        <ul class="nav top-2">
+                            <li>
+                                <!--class="active"-->
+                                <a href="@routes.Application.index()">Главная
+                                    <!--<b class="caret"></b>-->
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="@routes.Application.about()" >О нас
+                                </a>
+                            </li>
+
+                            <li  class="dropdown">
+                                <a href="@routes.Application.services()" class="dropdown-toggle" data-toggle="dropdown">Партнёрство
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="@routes.Application.partnership()">О правилах веденеия партнёрства</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Подробнее</li>
+                                    <li><a href="@routes.Application.investors()">Инвесторам</a></li>
+                                    <li><a href="@routes.Application.agents()">Агентам</a></li>
+                                    <li><a href="@routes.Application.clients()">Клиентам</a></li>
+                                    <li><a href="@routes.Application.advisors()">Исполнителям</a></li>
+                                </ul>
+                                <b class="caret-out"></b>
+                            </li>
+
+                            <li  class="dropdown">
+                                <a href="@routes.Application.services()" class="dropdown-toggle" data-toggle="dropdown">Услуги
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="@routes.Application.services()">О видах оказываемых услуг</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Основные услуги</li>
+                                    <li><a href="@routes.Application.services()">Продвижение</a></li>
+                                    <li><a href="@routes.Application.services()">Безопасность</a></li>
+                                    <li><a href="@routes.Application.services()">Финансы</a></li>
+                                    <li><a href="@routes.Application.services()">Легитимность</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Доп. услуги</li>
+                                    <li><a href="@routes.Application.services()">Cтратегический
+                                        и инвестиционный консалтинг</a></li>
+                                    <li><a href="@routes.Application.services()">Правовое
+                                        сопровождение</a></li>
+                                    <li><a href="@routes.Application.services()">Проектное
+                                        сопровождение</a></li>
+                                    <li><a href="@routes.Application.services()">Налоговый
+                                        консалтинг и аудит</a></li>
+                                    <li><a href="@routes.Application.services()">Управленческий
+                                        консалтинг</a></li>
+                                </ul>
+                                <b class="caret-out"></b>
+                            </li>
+
+                            <li>
+                                <a href="@routes.Application.contacts()" >Контакты
+                                </a>
+                                <b class="caret-out"></b>
+                            </li>
+                        </ul>
+                    </div><!-- /nav-collapse -->
+
+                </div>
             </div><!-- /navbar-inner -->
-        </div><!-- /navbar -->
+         </div><!-- /navbar -->
+        </div>
     </div><!-- /container -->
 </div><!--/header -->
 <!--=== End Header ===-->
@@ -126,45 +156,12 @@
             <div class="span4">
                 <!-- About -->
                 <div class="headline"><h3>О нас</h3></div>
-                <p class="margin-bottom-25">...</p>
-
-                <!--&lt;!&ndash; Monthly Newsletter &ndash;&gt;-->
-                <!--<div class="headline"><h3>Monthly Newsletter</h3></div>-->
-                <!--<p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>-->
-                <!--<form class="form-inline" />-->
-                <!--<div class="input-append">-->
-                    <!--<input type="text" placeholder="Email Address" class="input-medium" />-->
-                    <!--<button class="btn-u">Subscribe</button>-->
-                <!--</div>-->
-                <!--</form>-->
+                <p class="margin-bottom-25">Мы хотели бы услышать о вашем бизнесе и поделиться с вами, как мы можем помочь лучшую позицию вашей компании на рынке. Мы рады приветствовать Вас, чтобы начать разговор с нами.</p>
             </div><!--/span4-->
 
-            <div class="span4">
-                <div class="posts">
-                    <div class="headline"><h3>Последние новости</h3></div>
-                    <dl class="dl-horizontal">
-                        <dt><a href="#"><img src="@routes.Assets.at("img/sliders/elastislide/6.jpg")" alt="" /></a></dt>
-                        <dd>
-                            <p><a href="#">1</a></p>
-                        </dd>
-                    </dl>
-                    <dl class="dl-horizontal">
-                        <dt><a href="#"><img src="@routes.Assets.at("img/sliders/elastislide/10.jpg")" alt="" /></a></dt>
-                        <dd>
-                            <p><a href="#">2</a></p>
-                        </dd>
-                    </dl>
-                    <dl class="dl-horizontal">
-                        <dt><a href="#"><img src="@routes.Assets.at("img/sliders/elastislide/11.jpg")" alt="" /></a></dt>
-                        <dd>
-                            <p><a href="#">3</a></p>
-                        </dd>
-                    </dl>
-                </div>
-            </div><!--/span4-->
 
             <div class="span4">
-                <!-- Monthly Newsletter -->
+
                 <div class="headline"><h3>Контакты</h3></div>
                   <address>
                     <i class="icon-home"></i>   25, Lorem Lis Street, Orange     California, US <br />
@@ -195,7 +192,7 @@
     <div class="container">
         <div class="row-fluid">
             <div class="span8">
-                <p>2013 &copy; ccp-club. ALL Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>2013 &copy; ccp-club. ALL Rights Reserved.
             </div>
             <!--<div class="span4">-->
                 <!--<a href="index.html"><img id="logo-footer" src="@routes.Assets.at("img/logo1.png")" class="pull-right" alt="" /></a>-->
@@ -216,15 +213,51 @@
 <script type="text/javascript" src="@routes.Assets.at("plugins/bxslider/jquery.bxslider.js")"></script>
 <script type="text/javascript" src="@routes.Assets.at("plugins/back-to-top.js")"></script>
 
+<script type="text/javascript" src="@routes.Assets.at("plugins/revolution_slider/rs-plugin/js/jquery.themepunch.plugins.min.js")"></script>
+<script type="text/javascript" src="@routes.Assets.at("plugins/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min.js")"></script>
+
+
 <!-- JS Page Level -->
 <script type="text/javascript" src="@routes.Assets.at("js/app.js")"></script>
 <script type="text/javascript" src="@routes.Assets.at("js/pages/index.js")"></script>
+<!--<script type="text/javascript">-->
+    <!--jQuery(document).ready(function() {-->
+        <!--App.init();-->
+        <!--App.initSliders();-->
+        <!--App.initBxSlider1();-->
+        <!--Index.initParallaxSlider();-->
+    <!--});-->
+<!--</script>-->
+
+<script type="text/javascript">
+$('#nav').affix({
+offset: {
+top: 0,
+left : 0
+}
+});
+$('#nav-stack').affix({
+offset: {
+top: 300,
+left : 0
+}
+});
+</script>
+
+<script type="text/javascript">
+$('ul.nav li.dropdown').hover(function() {
+$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+</script>
+
 <script type="text/javascript">
     jQuery(document).ready(function() {
-        App.init();
-        App.initSliders();
-        App.initBxSlider1();
-        Index.initParallaxSlider();
+    App.init();
+    <!--App.initFancybox();-->
+    App.initSliders();
+    Index.initRevolutionSlider();
     });
 </script>
 <!--[if lt IE 9]>

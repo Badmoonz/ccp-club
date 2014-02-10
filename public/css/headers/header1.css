@@ -125,7 +125,7 @@
 .header {
 	z-index:999;
 	position:relative;
-	border-bottom:solid 2px #eee;
+	border-bottom:solid 50px #eee;
 }
 
 .header .container {
@@ -183,6 +183,9 @@
     -o-transition:all 0.4s ease-in-out;
     transition:all 0.4s ease-in-out;
 }
+
+
+
 
 .collapse.in ul { 
 	margin-top:10px !important;

@@ -3,6 +3,8 @@ package controllers
 import play.api._
 import play.api.mvc._
 
+
+
 object Application extends Controller {
 
   def index = Action {
@@ -21,4 +23,20 @@ object Application extends Controller {
     Ok(views.html.services())
   }
 
+  def partnership = Action {
+    Ok(views.html.partnership())
+  }
+  def advisors = Action {
+    Ok(views.html.advisors())
+  }
+  def clients = Action {
+    Ok(views.html.clients())
+  }
+  def investors = Action {
+    Ok(views.html.investors())
+  }
+
+  def agents = Action {
+    Ok(views.html.agents())
+  }
 }

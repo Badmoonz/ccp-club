@@ -1,0 +1,66 @@
+@(title: String)(content: Html)
+@main("Партнёрство") {
+
+
+<div class="fullwidthbanner-container">
+    <div class="fullwidthabnner">
+        <ul>
+            <!-- THE FIRST SLIDE -->
+            <li data-transition="slideleft" data-slotamount="1" data-masterspeed="300" data-thumb="assets/img/sliders/revolution/thumbs/thumb3.jpg">
+
+                <!-- THE MAIN IMAGE IN THE SECOND SLIDE -->
+                <img src="@routes.Assets.at("img/headers/partners.jpg")" alt="" />
+
+                <div class="caption very_big_white_on_red lfl stl" data-x="-100" data-y="450" data-speed="300" data-start="500" data-easing="easeOutExpo" data-endspeed="300" data-endeasing="easeInSine">
+                    ПАРТНЁРСТВО
+                </div>
+
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-20">
+    <div class="container">
+        <h1 class="pull-left">Партнёрство</h1>
+        <ul class="pull-right breadcrumb">
+            <li><a href="@routes.Application.index()">Главная</a> <span class="divider">/</span></li>
+            <li><a href="@routes.Application.partnership()">Партнёрство</a></li>
+            <span class="divider">/</span></li>
+            <li class="active"> @title</li>
+
+
+        </ul>
+    </div><!--/container-->
+</div><!--/breadcrumbs-->
+
+<!--=== Content Part ===-->
+<div class="container">
+    <div class="row">
+        <div class="span2">
+
+            <div id="nav-stack">
+
+                <ul class="nav nav-pills nav-stacked" >
+                    <li class="active">
+                        <a href="@routes.Application.partnership()">Виды партнёрства</a></li>
+                    <li><a href="@routes.Application.investors()">ИНВЕСТОРАМ</a></li>
+                    <li><a href="@routes.Application.agents()">АГЕНТАМ</a></li>
+                    <li><a href="@routes.Application.clients()">КЛИЕНТАМ</a></li>
+                    <li><a href="@routes.Application.advisors()">ИСПОЛНИТЕЛЯМ</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="span10">
+          @content
+        </div>
+
+    </div>
+</div>
+<!-- //End Service Blokcs -->
+
+}
+

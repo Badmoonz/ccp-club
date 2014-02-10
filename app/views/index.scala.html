@@ -2,176 +2,247 @@
 
 @main("Welcome to Play") {
 
-<!--=== Slider ===-->
-<div class="slider-inner">
-    <div id="da-slider" class="da-slider">
-        <div class="da-slide">
-            <h2><i>CLEAN &amp; FRESH</i> <br /> <i>FULLY RESPONSIVE</i> <br /> <i>DESIGN</i></h2>
-        </div>
-        <div class="da-slide">
-            <h2><i>Знание обязывает к действию,</i> <br/> <i> лишь действие порождает истинное знание.</i></h2>
-            <!--<p><i>Lorem ipsum dolor amet</i> <br /> <i>tempor incididunt ut</i></p>-->
-            <!--<div class="da-img span6">-->
-                <!--<div class="span6">-->
-                    <!--<iframe src="http://player.vimeo.com/video/47911018" width="100%" height="320" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>-->
-                <!--</div>-->
-            <!--</div>-->
-        </div>
-        <div class="da-slide">
-            <h2><i>USING BEST WEB</i> <br /> <i>SOLUTIONS WITH</i> <br /> <i>HTML5/CSS3</i></h2>
-             <div class="da-img"><img src="assets/plugins/parallax-slider/img/html5andcss3.png" alt="image01" /></div>
-        </div>
-        <nav class="da-arrows">
-            <span class="da-arrows-prev"></span>
-            <span class="da-arrows-next"></span>
-        </nav>
-    </div><!--/da-slider-->
-</div><!--/slider-->
+<div class="fullwidthbanner-container">
+    <div class="fullwidthabnner">
+        <ul>
+            <!-- THE FIRST SLIDE -->
+            <li data-transition="slideleft" data-slotamount="1" data-masterspeed="300" data-thumb="assets/img/sliders/revolution/thumbs/thumb3.jpg">
+
+                <!-- THE MAIN IMAGE IN THE SECOND SLIDE -->
+                <img src="@routes.Assets.at("img/sliders/revolution/slider-1.jpg")" alt="" />
+
+                <div class="caption very_big_white_on_red lfl stl" data-x="-170" data-y="343" data-speed="300" data-start="500" data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">
+                    ЗНАНИЕ ОБЯЗЫВАЕТ К ДЕЙСТВИЮ,
+                </div>
+
+                <div class="caption big_white lfl stl" data-x="-40" data-y="390" data-speed="300" data-start="800" data-easing="easeOutExpo" data-end="9100" data-endspeed="300" data-endeasing="easeInSine">
+                    ЛИШЬ ДЕЙСТВИЕ ПОРОЖДАЕТ ИСТИННОЕ ЗНАНИЕ.
+                </div>
+
+            </li>
+
+            <!-- THE SECOND SLIDE -->
+            <li data-transition="slideleft" data-slotamount="15" data-masterspeed="300" data-delay="9400" data-thumb="assets/img/sliders/revolution/thumbs/thumb2.jpg">
+
+                <!-- THE MAIN IMAGE IN THE SECOND SLIDE -->
+                <img src="@routes.Assets.at("img/sliders/revolution/slider-2.jpg")" alt="" />
+
+                <div class="caption very_big_white lfl stl" data-x="18" data-y="343" data-speed="300" data-start="500" data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">
+                    TIMELINED CAPTIONS
+                </div>
+
+                <div class="caption big_white lfl stl" data-x="18" data-y="390" data-speed="300" data-start="800" data-easing="easeOutExpo" data-end="9100" data-endspeed="300" data-endeasing="easeInSine">
+                    MOVE CAPTIONS IN AND OUT ON ONE SLIDE
+                </div>
+
+            </li>
+
+            <!-- THE THIRD SLIDE -->
+            <li data-transition="slideleft" data-slotamount="10" data-masterspeed="300" data-thumb="assets/img/sliders/revolution/thumbs/thumb1.jpg">
+
+                <!-- THE MAIN IMAGE IN THE SECOND SLIDE -->
+                <img src="@routes.Assets.at("img/sliders/revolution/slider-3.jpg")" alt="" />
+
+                <div class="caption very_big_white lfl stl" data-x="18" data-y="343" data-speed="300" data-start="500" data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine">
+                    TIMELINED CAPTIONS
+                </div>
+
+                <div class="caption big_white lfl stl" data-x="18" data-y="390" data-speed="300" data-start="800" data-easing="easeOutExpo" data-end="9100" data-endspeed="300" data-endeasing="easeInSine">
+                    MOVE CAPTIONS IN AND OUT ON ONE SLIDE
+                </div>
+
+            </li>
+        </ul>
+
+        <div class="tp-bannertimer tp-bottom"></div>
+    </div>
+</div>
 <!--=== End Slider ===-->
+
+
+
 
 <!-- Purchase Block -->
 <div class="row-fluid purchase margin-bottom-30">
     <div class="container">
 
         <blockquote>
-            <h2 class="color-red">Сотрудничество с нами — гарантия успеха.</h2>
-            <p> Наша фирма — это безукоризненная репутация, опыт и гарантия результата. Наша деятельность получила высокую оценку многих ведущих компаний России.</p>
+            <h2 class="color-red">Наша миссия обеспечить наиболее комфортное ведение бизнеса наших клиентов.</h2>
+            <p>
+                Группа профессионалов, объединенная в нашей фирме, обладает многолетним опытом предпринимательства и сопровождения бизнеса в различных областях.            </p>
         </blockquote>
-     </div>
+
+        <blockquote>
+            <h2 class="color-red">Наша главная задача завоевать Ваше доверие и пробудить эффективность Вашего бизнеса.</h2>
+            <p>
+        Сделать его безопасным, успешно развивающимся, финансовообеспеченным и легитимным.
+        Мы пойдем так далеко, как Вы нам доверите от консультации до выполнения. Части проекта или его полностью.</p>
+        </blockquote>
+    </div>
 </div><!--/row-fluid-->
 <!-- End Purchase Block -->
 
 <!--=== Content Part ===-->
 <div class="container">
 <!-- Service Blocks -->
-<div class="row-fluid servive-block">
-    <div class="span4">
-        <h4>Нацеленность результат</h4>
-        <p><i class="icon-bell"></i></p>
-        <p> Мы помогаем нашим клиентам получить более высокую прибыль скорее, чем они могли бы самостоятельно. Наша работа — определить, как Вы, наш клиент, собираетесь зарабатывать больше денег путем указания конкретных шагов, которые приведут Вас к желаемому результату. Наша проектная работа преследует только одну цель: повысить прибыльность наших клиентов.</p>
-    </div>
-    <div class="span4">
-        <h4>Напряженная работа</h4>
-        <p><i class="icon-bullhorn"></i></p>
-        <p>       Результат не может быть создан без отдачи себя полностью тому, что вы делаете.
-            Мы считаем, что успех состоит из 90% усердной работы и 10% вдохновения. Мы стараемся работать как можно больше, поэтому у Вас будет время сосредоточиться на решении множества других задач, постоянно требующих Вашего внимания, а мы будем отдавать 120% наших усилий для решения поставленных Вами задач.</p>    </div>
-    <div class="span4">
-        <h4>Честность</h4>
-        <p><i class="icon-cut"></i></p>
-        <p> Мы считаем, что долгосрочные отношения с нашими клиентами могут быть только на основе честного и открытого общения, откровенного обсуждения проблем и предлагаемых возможностей их решения.
-            Это не всегда легко. Это не всегда легко, возможно, наши предложения не выглядят лучшим решением в краткосрочной перспективе, однако мы верим, что, будучи открытыми с нашими клиентами, мы даем им дополнительные гарантии, что интересы клиента для нас важнее всего (даже важнее наших собственных интересов).</p>
-     </div>
-</div><!--/row-fluid-->
 <!-- //End Service Blokcs -->
+    <div class="row-fluid">
+        <div class="span4">
+            <div class="headline"><h3>Нацеленность результат</h3></div>
+            <p><img class="pull-left lft-img-margin img-width-200" src="@routes.Assets.at("img/work/effective.jpg")" alt=""> Мы помогаем нашим клиентам получить более высокую прибыль скорее, чем они могли бы самостоятельно. Наша работа — определить, как Вы, наш клиент, собираетесь зарабатывать больше денег путем указания конкретных шагов, которые приведут Вас к желаемому результату. Наша проектная работа преследует только одну цель: повысить прибыльность наших клиентов.</p>
 
-<!-- Our Clients -->
-<div id="clients-flexslider" class="flexslider home clients">
-    <div class="headline"><h3>Наши клиенты</h3></div>
-    <ul class="slides">
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/hp_grey.png" alt="" />
-                <img src="assets/img/clients/hp.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/igneus_grey.png" alt="" />
-                <img src="assets/img/clients/igneus.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/vadafone_grey.png" alt="" />
-                <img src="assets/img/clients/vadafone.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/walmart_grey.png" alt="" />
-                <img src="assets/img/clients/walmart.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/shell_grey.png" alt="" />
-                <img src="assets/img/clients/shell.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/natural_grey.png" alt="" />
-                <img src="assets/img/clients/natural.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/aztec_grey.png" alt="" />
-                <img src="assets/img/clients/aztec.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/gamescast_grey.png" alt="" />
-                <img src="assets/img/clients/gamescast.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/cisco_grey.png" alt="" />
-                <img src="assets/img/clients/cisco.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/everyday_grey.png" alt="" />
-                <img src="assets/img/clients/everyday.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/cocacola_grey.png" alt="" />
-                <img src="assets/img/clients/cocacola.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/spinworkx_grey.png" alt="" />
-                <img src="assets/img/clients/spinworkx.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/shell_grey.png" alt="" />
-                <img src="assets/img/clients/shell.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/natural_grey.png" alt="" />
-                <img src="assets/img/clients/natural.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/gamescast_grey.png" alt="" />
-                <img src="assets/img/clients/gamescast.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/everyday_grey.png" alt="" />
-                <img src="assets/img/clients/everyday.png" class="color-img" alt="" />
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="assets/img/clients/spinworkx_grey.png" alt="" />
-                <img src="assets/img/clients/spinworkx.png" class="color-img" alt="" />
-            </a>
-        </li>
-    </ul>
-</div><!--/flexslider-->
+        </div>
+        <div class="span4">
+            <div class="headline"><h3>Напряженная работа</h3></div>
+        <p><img class="pull-left lft-img-margin img-width-200" src="@routes.Assets.at("img/work/time-effective.jpg")" alt=""> Результат не может быть создан без отдачи себя полностью тому, что вы делаете.
+            Мы считаем, что успех состоит из 90% усердной работы и 10% вдохновения. Мы стараемся работать как можно больше, поэтому у Вас будет время сосредоточиться на решении множества других задач, постоянно требующих Вашего внимания, а мы будем отдавать 120% наших усилий для решения поставленных Вами задач.</p>
+        </div>
+        <div class="span4">
+            <div class="headline"><h3>Честность</h3></div>
+            <p><img class="pull-left lft-img-margin img-width-200" src="@routes.Assets.at("img/work/handshake.jpg")" alt="">Мы считаем, что долгосрочные отношения с нашими клиентами могут быть только на основе честного и открытого общения, откровенного обсуждения проблем и предлагаемых возможностей их решения.
+                Это не всегда легко. Это не всегда легко, возможно, наши предложения не выглядят лучшим решением в краткосрочной перспективе, однако мы верим, что, будучи открытыми с нашими клиентами, мы даем им дополнительные гарантии, что интересы клиента для нас важнее всего (даже важнее наших собственных интересов).</p>
+
+        </div>
+    </div>
+
+    <div class="headline"><h3>Партнёрские программы</h3></div>
+
+
+    <div class="row-fluid servive-block"><!-- remove class "service-alternative" to hide green onmouseover effect-->
+        <div class="span3">
+            <div class="service clearfix">
+                <div class="circle">
+                    <i class="icon-resize-small"></i>
+                </div>
+                <div class="desc">
+                        <h4>ИНВЕСТОРАМ</h4>
+                    <p>  Мы хотели бы услышать о вашем бизнесе и поделиться с вами, как мы можем помочь лучшую позицию вашей компании на рынке. Мы рады приветствовать Вас, чтобы начать разговор с нами.</p>
+                    <p><a class="btn-u btn-u-red" href="@routes.Application.investors()" >подробнее</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="span3">
+            <div class="service clearfix">
+                <div class="circle">
+                    <i class="icon-cogs"></i>
+                </div>
+                <div class="desc">
+                    <h4>АГЕНТАМ</h4>
+                    <p>  Мы хотели бы услышать о вашем бизнесе и поделиться с вами, как мы можем помочь лучшую позицию вашей компании на рынке. Мы рады приветствовать Вас, чтобы начать разговор с нами.</p>
+                    <p><a class="btn-u btn-u-red" href="@routes.Application.agents()" >подробнее</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="span3">
+            <div class="service clearfix">
+                <div class="circle">
+                    <i class="icon-plane"></i>
+                </div>
+                <div class="desc">
+                    <h4>КЛИЕНТАМ</h4>
+                    <p>  Мы хотели бы услышать о вашем бизнесе и поделиться с вами, как мы можем помочь лучшую позицию вашей компании на рынке. Мы рады приветствовать Вас, чтобы начать разговор с нами.</p>
+                    <p><a class="btn-u btn-u-red" href="@routes.Application.clients()" >подробнее</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="span3">
+            <div class="service clearfix">
+                <div class="circle">
+                    <i class="icon-plane"></i>
+                </div>
+                <div class="desc">
+                    <h4>ИСПОЛНИТЕЛЯМ</h4>
+                    <p>Давайте поговорим о вашем бизнесе
+                        Мы хотели бы услышать о вашем бизнесе и поделиться с вами, как мы можем помочь лучшую позицию вашей компании на рынке. Мы рады приветствовать Вас, чтобы начать разговор с нами.</p>
+                    <p><a class="btn-u btn-u-red" href="@routes.Application.advisors()" >подробнее</a></p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+    <div class="one-page-inner one-red">
+        <div class="container" style="">
+            <div class="headline"><h3>Проблемы, которые мы решаем</h3></div>
+            <div class="row-fluid">
+                <div class="span5">
+                    <!-- Other Questions -->
+
+                    <!-- Accardion -->
+                    <div class="accordion acc-home margin-bottom-40" id="accordion2">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                    Anim pariatur cliche reprehenderit bird on it squid single-origin
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
+                                <div class="accordion-inner">
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.</p>
+                                </div>
+                            </div>
+                        </div><!--/accordion-group-->
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                    Nihil anim keffiyeh helvetica accusamus labore sustainable VHS
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body in collapse" style="height: auto;">
+                                <div class="accordion-inner">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div><!--/accordion-group-->
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                                    Brunch 3 wolf moon tempor enim eiusmod high life
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="accordion-body collapse" style="height: 0px;">
+                                <div class="accordion-inner">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div><!--/accordion-group-->
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                                    Labore wes anderson cred labore wes anderson cred nesciunt
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="accordion-body collapse" style="height: 0px;">
+                                <div class="accordion-inner">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div><!--/accordion-group-->
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+                                    Brunch 3 wolf moon tempor sunt aliqua put a bird
+                                </a>
+                            </div>
+                            <div id="collapseFive" class="accordion-body collapse" style="height: 0px;">
+                                <div class="accordion-inner">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div><!--/accordion-group-->
+                    </div><!--/accardion-->
+                </div>
+                <div class="span7">
+                  <p>  <img src="@routes.Assets.at("img/work/help.jpg")" class="pull-left lft-img-margin img-width-200" alt=""> Маркетинг и рекламные агентства изобилуют в нашей стране и не без оснований. Если вы не можете дать миру знать о великих продуктов и услуг , которые вы предлагаете , вы не можете найти поддержку сообщества , вы должны процветать. Когда мы основали наше агентство , мы спросили себя , "что нас отличает? " Мы думали, что много об услугах , которые мы предлагаем , они похожи на других ведомств. Мы гордимся в нашей творчества и исполнения , и мы предоставляем очень мощный маркетинг для наших клиентов. Но есть и другие хорошие агентства , которые там также получения отличных результатов , а также.
+
+                      Что отличает нас от других учреждений является наш характер . Мы верим в силу отношений и мы держим эту веру на протяжении всей нашей работы . Маркетинг в современном мире ныряет так глубоко в каналы , которые удаляют взаимодействия лицом к лицу , что лучшие предприятия в нашей стране были основаны на . Мы считаем, что значение истинного связи с кем-то является наиболее важным результатом хороший маркетинг может принести. Мы знаем , как использовать как традиционные и онлайн- маркетинга для создания этих отношений . Это искусство принимать все большее не- интимные каналы сбыта , а также привлечению те же отношения , вы найдете на пожимая руку другому и имеющие подлинную беседу . Это то, что мы делаем лучше всего , потому что мы считаем, что только потому, что народные бизнеса изменилась , значения не имеют. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!-- //End Our Clients -->
 </div><!--/container-->
 <!-- End Content Part -->
